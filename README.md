@@ -37,13 +37,13 @@ MagiTrickle (произносится как *Мэджитрикл*) – ути�
 ### OpenWrt (любая версия)
 
 ```sh
-wget -qO- https://raw.githubusercontent.com/phenomenonRT/magitrickle/main/install.sh | sh
+wget -qO- https://raw.githubusercontent.com/phenomenonRT/magitrickle.install/main/install.sh | sh
 ```
 
 Или через `curl`, если он установлен:
 
 ```sh
-curl -fsSL https://raw.githubusercontent.com/phenomenonRT/magitrickle/main/install.sh | sh
+curl -fsSL https://raw.githubusercontent.com/phenomenonRT/magitrickle.install/main/install.sh | sh
 ```
 
 ### Keenetic (Entware)
@@ -52,7 +52,7 @@ curl -fsSL https://raw.githubusercontent.com/phenomenonRT/magitrickle/main/insta
 
 ```sh
 opkg update && opkg install curl ca-certificates
-curl -fsSL https://raw.githubusercontent.com/phenomenonRT/magitrickle/main/install.sh | sh
+curl -fsSL https://raw.githubusercontent.com/phenomenonRT/magitrickle.install/main/install.sh | sh
 ```
 
 ### Что делает установщик
