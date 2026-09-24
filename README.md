@@ -80,7 +80,7 @@ curl -fsSL https://raw.githubusercontent.com/phenomenonRT/magitrickle.install/ma
 Параметры передаются после `sh -s --`:
 
 ```sh
-wget -qO- https://raw.githubusercontent.com/phenomenonRT/magitrickle/main/install.sh | sh -s -- -c
+wget -qO- https://raw.githubusercontent.com/phenomenonRT/magitrickle.install/main/install.sh | sh -s -- -c
 ```
 
 | Параметр | Что делает |
@@ -94,13 +94,13 @@ wget -qO- https://raw.githubusercontent.com/phenomenonRT/magitrickle/main/instal
 Установка конкретного файла по ссылке (например, другой версии из Releases):
 
 ```sh
-wget -qO- https://raw.githubusercontent.com/phenomenonRT/magitrickle/main/install.sh | sh -s -- -u https://github.com/phenomenonRT/magitrickle/releases/download/<тег>/<файл>.ipk
+wget -qO- https://raw.githubusercontent.com/phenomenonRT/magitrickle.install/main/install.sh | sh -s -- -u https://github.com/phenomenonRT/magitrickle/releases/download/<тег>/<файл>.ipk
 ```
 
 Переменные окружения ставятся перед `sh`:
 
 ```sh
-wget -qO- https://raw.githubusercontent.com/phenomenonRT/magitrickle/main/install.sh | KN=0 sh
+wget -qO- https://raw.githubusercontent.com/phenomenonRT/magitrickle.install/main/install.sh | KN=0 sh
 ```
 
 | Переменная | Назначение |
@@ -115,7 +115,7 @@ wget -qO- https://raw.githubusercontent.com/phenomenonRT/magitrickle/main/instal
 Установщик скачивает пакет из Releases этого репозитория и ставит его с правами `root`. Если не хотите запускать скрипт «вслепую», скачайте его, прочитайте и только потом запустите:
 
 ```sh
-wget -O /tmp/install.sh https://raw.githubusercontent.com/phenomenonRT/magitrickle/main/install.sh
+wget -O /tmp/install.sh https://raw.githubusercontent.com/phenomenonRT/magitrickle.install/main/install.sh
 less /tmp/install.sh
 sh /tmp/install.sh
 ```
